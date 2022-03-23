@@ -1,0 +1,112 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  height: 100vh;
+  width: 100vw;
+  animation: fade 0.9s ease-in-out;
+}
+
+.wrapper {
+  background: #f8f8f8;
+  padding: 18px;
+
+  max-width: 302px;
+  width: 100%;  
+}
+
+.section p{
+  margin-bottom: 18px;
+}
+
+.section textarea {
+  border-radius: 5px;
+  padding: 16px;
+  max-width: 266px;
+  width: 100%;
+  
+  transition: outline-color 0.3s ease;
+}
+
+.section textarea:focus {  
+  outline-color: #1A365D;
+}
+
+.section + .section {
+  margin-top: 18px;
+}
+
+.increment-decrement {
+  display: flex;
+  align-items: center;
+}
+
+.increment-decrement p {
+  margin: 0 8px;
+}
+
+header {
+  background: #f8f8f8;
+  border-radius: 5px 5px 0 0;
+}
+
+header div{
+  max-width: 302px;
+  width: 100%;
+  height: 180px;
+  padding: 24px 18px;  
+  background:-webkit-radial-gradient(circle at 38% -63%, rgba(26, 54, 93, 1) 84%, rgba(248, 248, 248, 1) 85%);
+  background:-moz-radial-gradient(circle at 38% -63%, rgba(26, 54, 93, 1) 84%, rgba(248, 248, 248, 1) 85%); 
+  background:-ms-radial-gradient(circle at 38% -63%, rgba(26, 54, 93, 1) 84%, rgba(248, 248, 248, 1) 85%);  
+  background:-o-radial-gradient(circle at 38% -63%, rgba(26, 54, 93, 1) 84%, rgba(248, 248, 248, 1) 85%);
+  background:radial-gradient(circle at 39% -63%, rgba(26, 54, 93, 1) 84%, rgba(248, 248, 248, 1) 85%);
+}
+
+header div h1{
+  color: #CBD5E0;
+}
+
+header div h2{
+  color: #F7FAFC;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+
+  max-width: 302px;
+  width: 100%;
+  padding: 24px 18px;
+  background: #E2E8F0;
+  border-radius: 0 0 5px 5px;
+}
+
+footer button {
+  padding: 8px;
+  font-size: 18px;
+  border: none;
+  background: #1A365D;
+  color: #f8f8f8;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+footer button:hover {
+  opacity: 0.8;
+}
